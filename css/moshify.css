@@ -4,6 +4,8 @@
     --color-accent: #ff0034
     --color-headings: #1b0760
     --color-body: #918ca4
+    --color-border: #ccc
+    --border-radius: 30px;
 }
 
 /* all tags in page*/
@@ -199,3 +201,35 @@ a {
     background: #1b0760;
     color: #fff;
 }
+
+/* Input */
+
+.input {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: #1b0760;
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+.input-groups {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .input-groups .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+  }
+
+  .input-groups .btn {
+    margin: 4px;
+  }
+
