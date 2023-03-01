@@ -95,6 +95,7 @@ a {
 
 .badge-small {
     font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
 }
 
 /* lists */
@@ -116,6 +117,7 @@ a {
 .list-item {
     padding-left: 0.5rem;
     margin-bottom: 1rem;
+    font-weight: 500;
 } 
 
 /* Icons */
@@ -233,3 +235,61 @@ a {
     margin: 4px;
   }
 
+  /* Cards */
+
+  .card {
+    border-radius: 7px;
+    box-shadow: 0 /* V */ 0 /* H */ 20px /* Blurr */ 10px /* spread */ #f3f3f3 ;
+    overflow: hidden; /* in baraye gereftan noke tizi tike abi card */
+  }
+
+ .card__header, .card__body {
+    padding: 2rem 3rem;
+ }
+
+ .card--primary .card__header {
+    background: var(--color-primary);
+    background: #2584ff;
+    color: #fff;
+ }
+
+ .card--secondary .card__header {
+    background: var(--color-secondary);
+    background: #00d9ff;
+    color: #fff;
+ }
+
+.card--secondary .badge--secondary {
+    background: #02cdf1;
+}
+
+ /* plans */
+
+ .plan__name {
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4rem;
+ }
+
+ .plan__price {
+    font-size: 6rem;
+ }
+
+ .plan__billing-cycle {
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8; /* baraye kederi v tar bodan text */
+    margin-right: 1rem;
+ }
+
+ .plan__description {
+    font-size: 2rem;
+    font-weight: 300;
+    opacity: 0.99;
+    letter-spacing: 1px;
+ }
+
+ .plan .list-item {
+    margin-bottom: 2rem;
+ }
