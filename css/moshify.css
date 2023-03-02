@@ -293,3 +293,22 @@ a {
  .plan .list-item {
     margin-bottom: 2rem;
  }
+
+ /* media */
+
+ .media {
+    display: flex;
+ }
+
+ .media__title {
+    margin-top: 0;
+ }
+
+.media__body {
+    margin: 0 2rem;
+}
+
+.media__imgae {
+    margin-top: 1rem;
+}
+
