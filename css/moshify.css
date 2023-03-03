@@ -340,3 +340,23 @@ a {
     font-size: 2rem;
     font-style: normal;
 }
+
+/* Grid */
+
+.grid {
+    display: grid;
+}
+
+@media (min-width: 768px) {
+    .grid--1×2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid--1×3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  
