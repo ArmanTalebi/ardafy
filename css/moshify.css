@@ -13,6 +13,7 @@
 
 *, *::after, *::before {
     box-sizing: border-box;
+    
 }
 
 /* Typography */
@@ -32,6 +33,7 @@ h1, h2, h3 {
     color: var(--color-heading);
     color: #1b0760;
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 h1 {
    
@@ -489,7 +491,7 @@ padding-left: 6rem;
 .block {
     --padding-verical: 6rem;
     padding: 6rem 2rem;
-    border: 2px solid red;
+    
 }
 
 .block__header {
@@ -585,4 +587,33 @@ padding-left: 6rem;
     }
 }
 
-/*  */
+/* Hero */
+
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 63%, 0% 100%);
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;   
+}
+
+.hero__image {
+    width: 70%;
+    height: 70%;
+    margin-left: 30%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero{
+    padding-top: 10px;
+    }
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
+}
+
+/* optimization image 8/
