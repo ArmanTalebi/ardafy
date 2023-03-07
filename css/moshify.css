@@ -527,14 +527,13 @@ padding-left: 6rem;
 /* Blocks */
 
 .block {
-    --padding-verical: 6rem;
     padding: 3rem 3rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
     
 }
 
@@ -756,3 +755,9 @@ padding-left: 6rem;
 }
 
 /* Testimonial Block */
+ 
+.block .block__header {
+    margin-right: 70px;
+}
+
+/* Footer */
