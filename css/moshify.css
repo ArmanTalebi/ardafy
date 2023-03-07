@@ -294,11 +294,31 @@ padding-left: 6rem;
     color: #fff;
  }
 
+ .card--primary .badge-primary {
+    background: #126de4;
+ }
+ 
 .card--secondary .badge--secondary {
     background: #02cdf1;
 }
 
  /* plans */
+
+ .plan {
+    transition: transform .1s ease-out;
+ }
+
+ .plan--popular {
+    transform: scale(1.07) 
+}
+
+.plan:hover {
+    transform: scale(1.04);
+}
+
+.plan--popular:hover {
+    transform: scale(1.1);
+}
 
  .plan__name {
     color: #fff;
@@ -499,7 +519,7 @@ padding-left: 6rem;
 
 .block {
     --padding-verical: 6rem;
-    padding: 6rem 2rem;
+    padding: 3rem 3rem;
     
 }
 
@@ -656,3 +676,21 @@ padding-left: 6rem;
 
 /* plans Block */
 
+.block {
+    margin: 100px 0;
+}
+
+.block-plans .grid {
+    gap: 8rem 4rem;
+    margin: 0 2rem;
+}
+
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.block .plan {
+    box-shadow: 0 0 20px 10px #f3f3f3;
+}
+
+/* Features */
