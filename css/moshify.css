@@ -17,7 +17,10 @@
 }
 
 /* Typography */
-
+::selection {
+    background: #2584ff;
+    color: #fff;
+}
 html {
     /* 62.5% of 16px = 10px */
     font-size: 62.5%;
@@ -44,7 +47,7 @@ h2 {
 }
 h3 {
     font-size: 3rem;
-   
+   font-weight: 500;
 }
 p {
     margin-top: 0;
@@ -106,8 +109,6 @@ a {
 .list {
     list-style: none;
     padding-left: 0;
-    color: var(--color-heading);
-    color: #1b0760;
     display: inline-block;
     margin-right: 2rem;
     
@@ -116,6 +117,8 @@ a {
 .list-tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
+    color: var(--color-heading);
+    color: #1b0760;
 }
 
 .list-item {
@@ -352,7 +355,9 @@ padding-left: 6rem;
  /* media */
 
  .media {
+    width: 100%;
     display: flex;
+    margin-bottom: 4rem;
  }
 
  .media__title {
@@ -365,6 +370,10 @@ padding-left: 6rem;
 
 .media__imgae {
     margin-top: 1rem;
+}
+
+.media p {
+    font-size: 2rem;
 }
 
 /* Qoutes */
@@ -520,7 +529,8 @@ padding-left: 6rem;
 .block {
     --padding-verical: 6rem;
     padding: 3rem 3rem;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .block__header {
@@ -530,6 +540,7 @@ padding-left: 6rem;
 
 .block__heading {
     margin-top: 0;
+    text-align: center;
 }
 
 .block--dark {
@@ -537,13 +548,16 @@ padding-left: 6rem;
     color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3
+ {
     color: #fff;
 }
 
 .block--skewed-right {
     padding-bottom: 6rem;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 
 .block--skewed-left {
@@ -677,10 +691,6 @@ padding-left: 6rem;
 
 /* plans Block */
 
-.block {
-    margin: 100px 0;
-}
-
 .block-plans .grid {
     gap: 8rem 4rem;
     margin: 0 2rem;
@@ -717,10 +727,6 @@ padding-left: 6rem;
     transform: scale(1.1);
 }
 
-.block {
-    margin: 20px 0 0 30px;
-}
-
 .block .block__header {
     margin-left: 12rem;
 }
@@ -730,3 +736,23 @@ padding-left: 6rem;
         
     }
 }
+
+/* showcase block */
+
+.block-showcase__image {
+    width: 105%;
+    margin: 6rem;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 768px) { 
+    .block-showcase__image .grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .block-showcase__image {
+        width: 100%;
+    }
+}
+
+/* Testimonial Block */
