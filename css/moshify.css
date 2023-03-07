@@ -520,11 +520,12 @@ padding-left: 6rem;
 .block {
     --padding-verical: 6rem;
     padding: 3rem 3rem;
-    
+    margin: 0;
 }
 
 .block__header {
     text-align: center;
+    
 }
 
 .block__heading {
@@ -552,7 +553,7 @@ padding-left: 6rem;
 
 .container {
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0 0;
 } 
 
 /* Navigation Bar */
@@ -694,3 +695,38 @@ padding-left: 6rem;
 }
 
 /* Features */
+
+.feature {
+    gap: 4rem 2rem;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature__image {
+    width: 125%;
+    transition: 0.4s;
+}
+
+.feature__image:hover {
+    transform: scale(1.1);
+}
+
+.block {
+    margin: 20px 0 0 30px;
+}
+
+.block .block__header {
+    margin-left: 12rem;
+}
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;  
+        
+    }
+}
